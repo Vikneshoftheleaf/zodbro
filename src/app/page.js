@@ -15,6 +15,12 @@ const zodiacSigns = [
   { name: "Pisces", date: "Feb 19 - Mar 20", icon: "♓" },
 ];
 
+export const metadata = {
+  title: "Zodbro | Daily  horoscope",
+  description: "Daily horoscope for all the zodiac signs.",
+};
+
+
 export default function Home() {
   return (
     <div className="max-w-4xl mx-auto p-6">

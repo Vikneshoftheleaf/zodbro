@@ -2,6 +2,16 @@ import db from '@/firebase';
 import { doc, getDoc } from "firebase/firestore";
 import RenderUI from '@/component/render';
 
+export async function generateMetadata({ params }) {
+
+  const q = params.slug
+
+  return {
+    title: `${q.charAt(0).toUpperCase()+q.slice(1)} - Today Horoscope`,
+    description: `Today horoscope for ${q}`,
+  };
+}
+
 export default async function Sign({params})
 {
     const q = params.slug
