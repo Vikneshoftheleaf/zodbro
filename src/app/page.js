@@ -11,7 +11,7 @@ import Libra from "@/signs/libra.png"
 import Scorpio from "@/signs/scorpio.png"
 import Sagittarius from "@/signs/sagittarius.png"
 import Capricorn from "@/signs/capricorn.png"
-import Aquarius from "@/signs/aquarius-1.png"
+import Aquarius from "@/signs/aquarius.png"
 import Pisces from "@/signs/pisces.png"
 
 const zodiacSigns = [
@@ -43,12 +43,13 @@ export default function Home() {
       <div className="col-span-4 grid grid-cols-3 md:grid-cols-4 gap-6 ">
         {zodiacSigns.map((sign) => (
           <Link key={sign.name} href={`/sign/${sign.name.toLowerCase()}`} passHref className="flex flex-col justify-center items-center">
-            <div className="rounded-full text-center cursor-pointer">
-              <Image src={sign.image} alt={sign.name} height={64} width={64} ></Image>
+            <div className="rounded-full text-center cursor-pointer hover:bg-white/20 transition">
+
+              <Image src={sign.image} alt={sign.name} height={80} width={80} ></Image>
             </div>
             <div className="text-center">
-              <h2 className="font-semibold text-xk mt-2">{sign.name}</h2>
-              <p className="text-xs font-thin text-gray-200">{sign.date}</p>
+              <h2 className="font-semibold text-xl mt-2">{sign.name}</h2>
+              <p className="text-sm font-thin text-gray-200">{sign.date}</p>
             </div>
           </Link>
 
@@ -57,7 +58,7 @@ export default function Home() {
 
       <div className="hidden lg:block col-span-2 max-w-xl h-full mx-auto  px-6">
         <div className="min-h-full flex flex-col justify-center items-center gap-4 rounded-3xl bg-white/10 backdrop-blur-lg  shadow-inner-glow text-white p-8 transition hover:bg-white/20">
-        <Image src={Gemini} alt="gemini" height={80} width={80} className=" invert"></Image>
+          <Image src={Gemini} alt="gemini" height={80} width={80} className=""></Image>
           <h2 className="text-3xl font-bold text-center mb-2">Gemini</h2>
           <p className="text-center text-sm text-gray-300 mb-4">05/21 - 06/20</p>
           <p className="text-gray-200 text-base font-extralight leading-relaxed text-center">
