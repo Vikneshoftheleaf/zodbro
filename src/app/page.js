@@ -43,8 +43,8 @@ export default function Home() {
       <div className="col-span-4 grid grid-cols-3 md:grid-cols-4 gap-6 ">
         {zodiacSigns.map((sign) => (
           <Link key={sign.name} href={`/sign/${sign.name.toLowerCase()}`} passHref className="flex flex-col justify-center items-center">
-            <div className="rounded-full p-4 text-center cursor-pointer transition backdrop-blur-lg bg-white/10 shadow-md hover:bg-white/20 text-white ">
-              <Image src={sign.image} alt={sign.name} height={56} width={56} className=" invert"></Image>
+            <div className="rounded-full text-center cursor-pointer transition backdrop-blur-lg hover:bg-white/20 text-white ">
+              <Image src={sign.image} alt={sign.name} height={64} width={64} className=" invert"></Image>
             </div>
             <div className="text-center">
               <h2 className="font-semibold text-xk mt-2">{sign.name}</h2>
