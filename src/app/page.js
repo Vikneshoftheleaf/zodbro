@@ -44,7 +44,7 @@ export default function Home() {
         {zodiacSigns.map((sign) => (
           <Link key={sign.name} href={`/sign/${sign.name.toLowerCase()}`} passHref className="flex flex-col justify-center items-center">
             <div className="rounded-full text-center cursor-pointer transition  brightness-0 invert">
-              <Image src={sign.image} alt={sign.name} height={64} width={64} className=""></Image>
+              <Image src={sign.image} alt={sign.name} height={64} width={64} unoptimized className="w-full h-full"></Image>
             </div>
             <div className="text-center">
               <h2 className="font-semibold text-xk mt-2">{sign.name}</h2>
