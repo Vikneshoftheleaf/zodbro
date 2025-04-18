@@ -11,7 +11,7 @@ import Libra from "@/signs/libra.png"
 import Scorpio from "@/signs/scorpio.png"
 import Sagittarius from "@/signs/sagittarius.png"
 import Capricorn from "@/signs/capricorn.png"
-import Aquarius from "@/signs/aquarius.png"
+import Aquarius from "@/signs/aquarius-1.png"
 import Pisces from "@/signs/pisces.png"
 
 const zodiacSigns = [
@@ -43,8 +43,8 @@ export default function Home() {
       <div className="col-span-4 grid grid-cols-3 md:grid-cols-4 gap-6 ">
         {zodiacSigns.map((sign) => (
           <Link key={sign.name} href={`/sign/${sign.name.toLowerCase()}`} passHref className="flex flex-col justify-center items-center">
-            <div className="rounded-full text-center cursor-pointer transition  brightness-0 invert">
-              <Image src={sign.image} alt={sign.name} height={64} width={64} style={{ filter: 'invert(1) brightness(0)' }}></Image>
+            <div className="rounded-full text-center cursor-pointer">
+              <Image src={sign.image} alt={sign.name} height={64} width={64} ></Image>
             </div>
             <div className="text-center">
               <h2 className="font-semibold text-xk mt-2">{sign.name}</h2>
