@@ -2,17 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Aries from "@/signs/aries.png"
-import Taurus from "@/signs/Taurus.png"
-import Gemini from "@/signs/Gemini.png"
-import Cancer from "@/signs/Cancer.png"
-import Leo from "@/signs/Leo.png"
-import Virgo from "@/signs/Virgo.png"
-import Libra from "@/signs/Libra.png"
-import Scorpio from "@/signs/Scorpio.png"
-import Sagittarius from "@/signs/Sagittarius.png"
-import Capricorn from "@/signs/Capricorn.png"
-import Aquarius from "@/signs/Aquarius.png"
-import Pisces from "@/signs/Pisces.png"
+import Taurus from "@/signs/taurus.png"
+import Gemini from "@/signs/gemini.png"
+import Cancer from "@/signs/cancer.png"
+import Leo from "@/signs/leo.png"
+import Virgo from "@/signs/virgo.png"
+import Libra from "@/signs/libra.png"
+import Scorpio from "@/signs/scorpio.png"
+import Sagittarius from "@/signs/sagittarius.png"
+import Capricorn from "@/signs/capricorn.png"
+import Aquarius from "@/signs/aquarius.png"
+import Pisces from "@/signs/pisces.png"
 
 const zodiacSigns = [
   { name: "Aries", date: "03/21 - 04/19", icon: "♈", image: Aries },
