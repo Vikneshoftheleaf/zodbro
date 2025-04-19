@@ -1,3 +1,6 @@
+import Gemini from '@/signs/gemini.png'
+import Image from 'next/image'
+
 export default function Navbar() {
     return (
 
@@ -9,13 +12,7 @@ export default function Navbar() {
 
             </div>
 
-            <div className="flex gap-2  items-center justify-center">
-                
-                <div className="flex gap-4 items-center py-4 px-6 bg-white/10 backdrop-blur-lg rounded-full text-white text-center ">
-                    <h2 className="text-xl font-semibold mb-1">♊  Viknesh</h2>
-                </div>
-
-            </div>
+           
 
         </div>
     )

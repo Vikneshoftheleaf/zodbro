@@ -19,7 +19,7 @@ export default async function Sign({params})
     const docSnap = await getDoc(docRef);
     let content;
     if (docSnap.exists()) {
-      content = docSnap.data()
+      content = docSnap.data().dailyHoroscope[q]
     } 
       return (
        <RenderUI data={content} sign={q}/>
