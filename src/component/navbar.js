@@ -1,4 +1,3 @@
-import Gemini from '@/signs/gemini.png'
 import Image from 'next/image'
 
 export default function Navbar() {
