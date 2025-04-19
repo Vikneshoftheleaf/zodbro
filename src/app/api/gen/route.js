@@ -74,7 +74,7 @@ export async function GET() {
 
   const response = await ai.models.generateContent({
     model: 'gemini-2.0-flash-001',
-    contents: 'create a json on daily_horoscope the json should contain all 12 signs with subsection, today_vibe(eg: High Energy), today_horoscope(150 characters),good_time(eg:8 am - 9:30 pm),bad_time (eg:8 am - 9:30 pm),love(100 char),career(100 char),health(100 char),wealth(100 char),lucky_elements[eg:black tshirt, ],mood_indicator[0-100%],every keys should be lower case, only json content, no extra text',
+    contents: 'create a json on daily_horoscope the json should contain all 12 signs with subsection, today_vibe(eg: High Energy), today_horoscope(150 characters),good_time(eg:8 am - 9:30 pm),bad_time (eg:8 am - 9:30 pm),productivity( 1-5 ),luck( 1-5 ),health( 1-5 ),mind( 1-5 ),lucky_elements[eg:black tshirt, ],mood_indicator[0-100%],every keys should be lower case, only json content, no extra text',
     //contents:"create a json object with three dummy data, no additional text, only json as respone",
   });
 
