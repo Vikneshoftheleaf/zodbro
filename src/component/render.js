@@ -65,7 +65,7 @@ export default function RenderUI({ data, sign }) {
               <div className="flex flex-col justify-center items-center gap-2 relative">
 
                 <span
-                  className={`absolute top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.luck === 1
+                  className={`absolute -z-10 top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.luck === 1
                     ? 'bg-red-500'
                     : data.luck === 2
                       ? 'bg-rose-500'
@@ -91,7 +91,7 @@ export default function RenderUI({ data, sign }) {
                 />
 
 
-                <div className="rounded-md bg-white/10 backdrop-blur-lg w-full p-4">
+                <div className="rounded-md z-0 bg-white/10 backdrop-blur-lg w-full p-4">
                   <h1 className="text-sm text-center"> Luck</h1>
                   <p className="text-center text-2xl">{
                     (data.luck == 1) ? "Very Bad" : (data.luck == 2) ? "Bad" : (data.luck == 3) ? "Fair" : (data.luck == 4) ? "Good" : "Very Good"
