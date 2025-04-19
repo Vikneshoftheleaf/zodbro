@@ -1,13 +1,11 @@
 
 import { NextResponse } from "next/server";
-import { GoogleGenerativeAI } from "@google/generative-ai";
 
 import { GoogleGenAI } from '@google/genai';
 import db from "@/firebase";
 
 import { doc, setDoc } from "firebase/firestore";
 
-import Groq from "groq-sdk";
 
 // Add a new document in collection "cities"
 
