@@ -65,7 +65,7 @@ export async function GET() {
     }
   }
 
-  const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+  const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
   const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
