@@ -7,8 +7,6 @@ import db from "@/firebase";
 import { doc, setDoc } from "firebase/firestore";
 
 
-// Add a new document in collection "cities"
-
 export async function GET() {
 
 
@@ -75,39 +73,9 @@ export async function GET() {
   const response = await ai.models.generateContent({
     model: 'gemini-2.0-flash-001',
     contents: 'create a json on daily_horoscope the json should contain all 12 signs with subsection, today_vibe(eg: High Energy), today_horoscope(150 characters),good_time(eg:8 am - 9:30 pm),bad_time (eg:8 am - 9:30 pm),productivity( 1-5 ),luck( 1-5 ),health( 1-5 ),mind( 1-5 ),lucky_elements[eg:black tshirt, ],mood_indicator[0-100%],every keys should be lower case, only json content, no extra text',
-    //contents:"create a json object with three dummy data, no additional text, only json as respone",
   });
 
   const result = removeMarkdownAndParseJSON(response.text);
-
-  /** 
-    const client = new Groq({
-        apiKey: process.env['GROQ_API_KEY']
-      });
-      
-     async function gen(para)
-     {
-        const chatCompletion = await client.chat.completions.create({
-          messages: [{ role: 'user', content: `today horoscope for ${para}, no AI response words, make it more like a human, no additional words, just straight into the content, the response should be medium in size.` }],
-          model: 'llama3-8b-8192',
-        });
-
-        return chatCompletion.choices[0].message.content
-    }
-      
-    const zodiacSigns = [
-      "aries", "taurus", "gemini", "cancer", "leo", "virgo",
-      "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"
-    ];
-    
-    const horoscopeData = {};
-    
-    for (const sign of zodiacSigns) {
-      horoscopeData[sign] = await gen(sign);
-    }
-    
-    await setDoc(doc(db, "horoscope", "daily"), horoscopeData);
-    **/
 
   await setDoc(doc(db, "horoscope", "daily"), result);
   return NextResponse.json({message: "done"})
