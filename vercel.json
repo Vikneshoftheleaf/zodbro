@@ -1,9 +1,8 @@
 {
-    "cron": [
-      {
-        "path": "/api/gen-cron",
-        "schedule": "0 * * * *"
-      }
+    "crons": [
+        {
+            "path": "/api/gen-cron",
+            "schedule": "0 * * * *"
+        }
     ]
-  }
-  
+}
