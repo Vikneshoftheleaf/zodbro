@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
       <head>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
       </head>
-      <body className={`${playfair.className} bg-zinc-900 text-zinc-100`}>
+      <body className={`${inter.className} bg-zinc-900 text-zinc-100`}>
         <Navbar />
         {children}
         </body>
