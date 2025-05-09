@@ -92,7 +92,6 @@ export default function RenderUI({ data, sign }) {
             <Image src={`/signs/${sign}.png`} width={150} height={150}></Image>
             <h2 className="text-3xl font-bold text-center">{sign.toUpperCase()}</h2>
             <p className="flex items-center justify-center text-sm bg-white/10 px-2 py-1 rounded-full "><span class={`flex w-3 h-3 me-1 ${signInfo.color.bg} rounded-full`}></span>{signInfo.planet}</p>
-
           </div>
         </div>
 

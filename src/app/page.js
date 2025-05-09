@@ -1,7 +1,8 @@
 import HomeComponent from "@/component/home";
+import Construction from "@/component/under-construction";
 export const metadata = {
-  title: "Zodbro | Daily  horoscope",
-  description: "Daily horoscope for all the zodiac signs.",
+  title: "Horoboy | Horoscope Daily",
+  description: "Explore the horoscope of the day for all horoscope zodiac signs on Horoboy. Get daily predictions, love advice, and career insights tailored to your zodiac sign.",
 };
 
 

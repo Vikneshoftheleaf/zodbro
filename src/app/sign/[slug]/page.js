@@ -7,8 +7,8 @@ export async function generateMetadata({ params }) {
   const q = params.slug
 
   return {
-    title: `${q.charAt(0).toUpperCase()+q.slice(1)} - Today Horoscope`,
-    description: `Today horoscope for ${q}`,
+    title: `Horoscope for ${q.charAt(0).toUpperCase()+q.slice(1)}`,
+    description: `Read your horoscope todday ${q}. Get personalized zodiac predictions and insights for ${q} today. Accurate and free.`,
   };
 }
 
