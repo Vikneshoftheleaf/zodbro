@@ -1,0 +1,15 @@
+# .github/workflows/daily-vercel-redeploy.yml
+name: Daily Vercel Redeploy
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # Runs every day at 2AM UTC
+  workflow_dispatch:
+
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel Redeploy
+        run: |
+          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_uYJGDVPXO7bMw0Zn3eoV3oel5vIy/XKUtK0otpE"
