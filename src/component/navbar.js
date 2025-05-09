@@ -13,7 +13,7 @@ export default function Navbar() {
 
                 <div>
                     <p className="text-sm font-thin">Get Your Daily</p>
-                    <h1 className="font-bold text-2xl">Horoscope</h1>
+                    <h1 className="font-bold text-lg -mt-1">Horoscope</h1>
 
                 </div>
             </Link>
