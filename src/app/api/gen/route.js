@@ -72,7 +72,7 @@ export async function GET() {
 
   const response = await ai.models.generateContent({
     model: 'gemini-2.0-flash-001',
-    contents: 'create a json on daily_horoscope the json should contain all 12 signs with subsection, today_vibe(single words, must be used in real world, dont use words realted to zodiac characterictics be random and cool), today_horoscope(150 characters, dont be cliche, just say how this day going to be, be real, if good say good if bad say bad, straightforward),good_time(eg:8 am - 9:30 pm),bad_time (eg:8 am - 9:30 pm),productivity( 1-5 ),luck( 1-5 ),health( 1-5 ),mind( 1-5 ),lucky_elements[eg:black tshirt, ],mood_indicator[0-100%],every keys should be lower case, only json content, no extra text',
+    contents: 'create a json on daily_horoscope the json should contain all 12 signs with subsection, today_vibe(single words, must be used in real world, dont use words realted to zodiac characterictics be random and cool), today_horoscope(150 characters, dont be cliche, just say how this day going to be, be real, if good say good if bad say bad, straightforward),good_time(eg:8 am - 9:30 pm),bad_time (eg:8 am - 9:30 pm),productivity( 1-5 ),luck( 1-5 ),health( 1-5 ),mind( 1-5 ),lucky_elements[eg:black tshirt, ],mood_indicator[0-100%],every keys should be lower case, only json content, no extra text,json structure -> daily_horoscope:{aries:{...details},libra:{...details},[..all other signs]}',
   });
 
   const result = removeMarkdownAndParseJSON(response.text);

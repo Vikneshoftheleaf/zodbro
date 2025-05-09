@@ -4,7 +4,7 @@ import SocialShare from './social-share'
 export default function Navbar() {
     return (
 
-        <div className="lg:p-6 px-6 py-3 flex justify-between items-center">
+        <div className="lg:p-6 px-6 py-3 flex justify- items-center">
 
             <Link href={'/'} className='flex items-center gap-2'>
 
@@ -19,7 +19,6 @@ export default function Navbar() {
                 </div>
             </Link>
 
-            <SocialShare/>
 
 
 
