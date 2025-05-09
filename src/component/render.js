@@ -147,7 +147,7 @@ export default function RenderUI({ data, sign }) {
               <div className="flex flex-col justify-center items-center gap-2 relative z-0">
 
                 <span
-                  className={`absolute hidden -z-10 top-0 -right-2 lg:flex w-8 h-8 me-3 rounded-full ${data.luck === 1
+                  className={`absolute -z-10 top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.luck === 1
                     ? 'bg-red-500'
                     : data.luck === 2
                       ? 'bg-rose-500'
@@ -185,7 +185,7 @@ export default function RenderUI({ data, sign }) {
               <div className="flex flex-col justify-center items-center gap-2 relative">
 
                 <span
-                  className={`absolute hidden top-0 -right-2 lg:flex w-8 h-8 me-3 rounded-full ${data.health === 1
+                  className={`absolute  top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.health === 1
                     ? 'bg-red-500'
                     : data.health === 2
                       ? 'bg-rose-500'
@@ -223,7 +223,7 @@ export default function RenderUI({ data, sign }) {
               <div className="flex flex-col justify-center items-center gap-2 relative">
 
                 <span
-                  className={`absolute hidden top-0 -right-2 lg:flex w-8 h-8 me-3 rounded-full ${data.mind === 1
+                  className={`absolute top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.mind === 1
                     ? 'bg-red-500'
                     : data.mind === 2
                       ? 'bg-rose-500'
@@ -261,7 +261,7 @@ export default function RenderUI({ data, sign }) {
               <div className="flex flex-col justify-center items-center gap-2 relative">
 
                 <span
-                  className={`absolute hidden top-0 -right-2 lg:flex w-8 h-8 me-3 rounded-full ${data.productivity === 1
+                  className={`absolute top-0 -right-2 flex w-8 h-8 me-3 rounded-full ${data.productivity === 1
                       ? 'bg-red-500'
                       : data.productivity === 2
                         ? 'bg-rose-500'

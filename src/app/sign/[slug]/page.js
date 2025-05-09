@@ -20,6 +20,7 @@ export default async function Sign({params})
     let content;
     if (docSnap.exists()) {
       content = docSnap.data()[q]
+      console.log(content)
     } 
       return (
        <RenderUI data={content} sign={q}/>
